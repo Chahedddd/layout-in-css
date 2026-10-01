@@ -6,12 +6,17 @@
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      body {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        min-height: 100vh;
-      }
-      /* Doe hier jouw ding! */
+     #basic-layout-1 {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows:250px 800px 120px;
+      gap: 15px;
+     }
+
+     #basic-layout-1 header,
+     #basic-layout-1 footer {
+      grid-column:1/-1;
+     }
     </style>
   </head>
   <body id="basic-layout-1">
